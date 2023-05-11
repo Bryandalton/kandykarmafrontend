@@ -20,7 +20,7 @@
   inset: 0;
 }
 
-body {
+.body {
   margin: 0;
   background-color: rgb(20, 20, 20);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -143,13 +143,6 @@ a {
     justify-content: end;
     align-items: flex-end;
   }
-  .card {
-    display: flex;
-    flex-direction: row !important;
-    justify-content: end;
-    align-items: flex-end;
-    width: 30vmax;
-  }
 }
 
 .display-container {
@@ -170,7 +163,7 @@ a {
   display: flex;
   justify-content: space-around;
 }
-r .login-container input {
+.login-container input {
   display: flex;
   border-radius: 15px;
 }
@@ -241,4 +234,35 @@ r .login-container input {
   to {
     transform: rotate(360deg);
   }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.checkbox input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"]:checked {
+  background-color: #0066ff;
+  border-color: #0066ff;
+}
+
+.checkbox input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.5);
+}
+
+.checkbox label {
+  cursor: pointer;
 }
