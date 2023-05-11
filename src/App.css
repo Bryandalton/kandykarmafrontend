@@ -14,18 +14,24 @@
   -webkit-text-size-adjust: 100%;
 }
 
+#root {
+  display: flex;
+  position: absolute;
+  inset: 0;
+}
+
 body {
   margin: 0;
   background-color: rgb(20, 20, 20);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -39,10 +45,12 @@ a {
   display: flex;
   justify-content: space-between;
   height: 100vh;
+  border: 20px solid black;
 }
 
 #menu-items {
-  margin-left: 1rem;
+  margin: 0;
+  padding: 0 25px;
   position: relative;
   z-index: 2;
   -webkit-text-stroke-width: 1px;
@@ -64,17 +72,17 @@ a {
 
 #menu-background-image {
   background-image: url("./images/glen-carrie-xBTnaTgleQE-unsplash.jpg");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
   background-position: center 40%;
   background-size: 110vmax;
   background-repeat: no-repeat;
-  height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
   transition: opacity 800ms ease, background-size 800ms ease,
     background-position 800ms ease;
-  width: 100%;
-  z-index: 0;
+  z-index: -1;
 }
 
 #menu-items:hover ~ #menu-background-image {
@@ -149,10 +157,8 @@ a {
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  float: right;
-  height: 90vh;
-  width: 70vw;
-  margin: 5vh 5vw 0 0;
+  flex: 1;
+  border: red 2px solid;
 }
 
 .about-container {
