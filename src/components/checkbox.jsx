@@ -9,7 +9,7 @@ export function Checkbox({ id, label, checked, onChange }) {
   return (
     <div className="checkbox">
       {[1, 2, 3, 4, 5].map((value) => (
-        <label key={value}>
+        <label key={value}> {value}
           <input
             value={value}
             type="checkbox"
