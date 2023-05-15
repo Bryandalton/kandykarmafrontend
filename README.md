@@ -1,4 +1,4 @@
-# <Kandy-Karma-Frontend>
+# Kandy-Karma-Frontend
 
 ## Description
 
