@@ -246,3 +246,12 @@ a {
 .checkbox label {
   cursor: pointer;
 }
+
+.checkbox label > *{
+display: inline-block;
+vertical-align: middle;
+}
+
+.checkbox label > span {
+  margin-right: 5px;
+}

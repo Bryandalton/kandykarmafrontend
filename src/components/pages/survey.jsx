@@ -67,7 +67,8 @@ export default function Survey() {
                   type="text"
                   className="form-control candyName"
                   placeholder="Enter Candy Name *"
-                  value=""
+                  value={surveyState.candy_name}
+                  name = "candy_name"
                 />
               </div>
             </form>
