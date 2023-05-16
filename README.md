@@ -6,7 +6,7 @@ This is a frontend only version of the Kandy Karma site, with some aesthetic cha
 
 ## Installation
 
-N/A
+Live deployment at https://bryandalton.github.io/kandykarmafrontend/#/ 
 
 ## Usage
 
