@@ -4,6 +4,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import { ADD_SURVEY } from "../../utils/graphql/mutation";
 import { useMutation } from "@apollo/client";
 import { Checkbox } from "../checkbox";
+import PopupModel from "../Popup";
 
 
 export default function Survey() {
@@ -91,8 +92,7 @@ export default function Survey() {
             <Checkbox />
             <p>Quality:</p>
             <Checkbox />
-
-            <button className="btnSubmit">Submit</button>
+            <PopupModel/>
           </div>
         </div>
   );
