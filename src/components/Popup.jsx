@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function PopupModel() {
+function PopupModal() {
   const [showPopup, setShowPopup] = useState(false);
 
   const handleButtonClick = () => {
@@ -16,7 +16,7 @@ function PopupModel() {
       <button className="btnSubmit" onClick={handleButtonClick}>Submit</button>
 
       {showPopup && (
-        <div style={{display:'flex', flexDirection: 'column', textAlign: 'center'}} className="popupModel">
+        <div style={{display:'flex', flexDirection: 'column', textAlign: 'center'}} className="popupModal">
           <h2>Thank you!</h2>
           <p>This is a frontend only version of Kandy Karma.<br/>
           The original cannot be hosted at this time but can be found at:<br/>
@@ -29,4 +29,4 @@ function PopupModel() {
 }
 
 
-export default PopupModel;
+export default PopupModal;
